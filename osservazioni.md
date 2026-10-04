@@ -36,7 +36,7 @@ Fare push significa inviare i commit salvati in locale al server remoto di GitHu
 
 Come ho verificato che la versione provata sia presente su GitHub: Da terminale posso usare l'istruzione git log --online -5 per verificare gli ultimi 5 commit registrati. Dal browser, invece, vado sul mio repository, controllo che l'ultimo commit sia quello inserito e verifico che i codici di hello.c e osservazioni.md siano corretti.
 
-Che cosa ho osservato prima e dopo `git pull`, e perché non serve un nuovo clone:
+Che cosa ho osservato prima e dopo `git pull`, e perché non serve un nuovo clone: prima del comando, la copia locale non conteneva le modifiche aggiunte da remoto. Dopo il comando, Git ha unito i file aggiornandoli senza cancellare nulla.
 
 ## Step 2 — Eco: prima prova
 
