@@ -1,27 +1,30 @@
 # Osservazioni — Esercitazione 0
 
-Gruppo:
+Gruppo: Massimiliano Mascitti e Noemi Marsicano
 
-Componenti (nome, cognome e username GitHub di entrambi):
+Componenti (Massimiliano Mascitti Massiii06, Noemi Marsicano Noemi-Marsicano):
 
-URL del repository condiviso:
+URL del repository condiviso: https://github.com/Massiii06/esercitazione-0-template.git
 
-Chi ha usato la tastiera nello step 1 e nello step 2:
+Chi ha usato la tastiera nello step 1 e nello step 2: Massimiliano Mascitti (1) e Noemi Marsicano (2)
 
 Compilate insieme le osservazioni e discutete le risposte: entrambi dovete
 saper spiegare le prove svolte.
 
 ## Step 1 — Hello World: compilazione ed esecuzione
 
-Comando di compilazione:
+Comando di compilazione: gcc -Wall hello.c -o hello oppure make hello. Se si usa gcc, poi bisogna ricompilare prima di poter eseguire la nuova versione del codice. Il comando make, invece, è più rapido. Se il codice non è stato modificato, make non fa nulla e segnala solamente 'up-to-date'; se è stato modificato, il comando esegue una nuova compilazione per aggiornare l'eseguibile. 
 
-Comando di esecuzione e risultato osservato:
+Comando di esecuzione e risultato osservato: il comando è ./hello e stampa su schermo l'output "Hello, computational physics!". Non serve l'estensione .exe per poterlo eseguire.
 
-Che cosa ho capito su sorgente ed eseguibile:
+Che cosa ho capito su sorgente ed eseguibile: hello.c è il codice sorgente scritto in linguaggio C, mentre hello è un file binario in linguaggio macchina. Se cambio il sorgente, bisogna necessariamente ricompilare per cambiare l'eseguibile, perché non è automatico.
 
-Output richiesto e comportamento del programma prima della modifica:
+Output richiesto e comportamento del programma prima della modifica: Prima della modifica, non stampava nulla, perché il TODO era messo come commento. 
 
-Esito dopo la modifica e spiegazione della correzione:
+Esito dopo la modifica e spiegazione della correzione: Sostituendo il commento con un printf e una stringa, viene stampata la stringa e il programma viene terminato correttamente. 
+
+
+
 
 ## Step 1 — Git
 
