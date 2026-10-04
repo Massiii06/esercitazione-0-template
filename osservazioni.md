@@ -28,9 +28,13 @@ Esito dopo la modifica e spiegazione della correzione: Sostituendo il commento c
 
 ## Step 1 — Git
 
-Quali file ho incluso nel commit e perché:
+Quali file ho incluso nel commit e perché: Ho incluso i file hello.c e osservazioni.md usando l'istruzione git add hello.c osservazioni.md da terminale. Non ho tracciato hello perché è un binario (con istruzioni tipo git add hello oppure git add .) perché è molto pesante e sprecherei inutilmente memoria.   Ho incluso entrambi i file nel commit col comando git comment -m "Commento personale", così il commento risulta riferito a entrambi i file (ho un unico scatolone, ma una stessa etichetta che segnala lo stato dei lavori in corso e si riferisce a entrambi). Se faccio due commit distinti, invece, posso riferire commenti diversi a file diversi.
 
-Come ho verificato che la versione provata sia presente su GitHub:
+Salvare un file significa salvare quel file nel proprio computer locale. Riguarda un singolo file ed è un'operazione di emacs
+Fare un commit significa creare un'istantanea di un insieme di file modificati all'interno della cronologia locale di Git nel computer locale
+Fare push significa inviare i commit salvati in locale al server remoto di GitHub, in modo che anche altre persone che dispongono fdell'accesso al repository possano vederli.
+
+Come ho verificato che la versione provata sia presente su GitHub: Da terminale posso usare l'istruzione git log --online -5 per verificare gli ultimi 5 commit registrati. Dal browser, invece, vado sul mio repository, controllo che l'ultimo commit sia quello inserito e verifico che i codici di hello.c e osservazioni.md siano corretti.
 
 Che cosa ho osservato prima e dopo `git pull`, e perché non serve un nuovo clone:
 
