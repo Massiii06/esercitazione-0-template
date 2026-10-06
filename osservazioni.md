@@ -38,17 +38,17 @@ Come ho verificato che la versione provata sia presente su GitHub: Da terminale 
 
 Che cosa ho osservato prima e dopo `git pull`, e perché non serve un nuovo clone: prima del comando, la copia locale non conteneva le modifiche aggiunte da remoto. Dopo il comando, Git ha unito i file aggiornandoli senza cancellare nulla.
 
-## Step 2 — Eco: prima prova
+## Step 2 — Eco: prima prova 
 
-Argomenti passati, comando e risultato:
+Argomenti passati, comando e risultato: Il comando passato è ./eco ciao 12 3.5, il risultato è ciao 12 3.5.
 
-Che cosa posso concludere:
+Che cosa posso concludere: La stringa 'ciao' rimane invariata, '12' viene acquisita come il numero 12 e anche '3.5' viene acquisito come numero '3.500000', aggiungendo degli zeri fino ad arrivare a 6 cifre decimali, come richiesto con l'istruzione %.6f inserita nel printf. Eseguendo echo $? viene restituito 0, il che significa che l'acquisizione è andata a buon fine.
 
 ## Step 2 — Eco: seconda prova
 
-Argomenti passati, comando e risultato:
+Argomenti passati, comando e risultato: Il comando passato è ./eco ciao dodici 3.5. Il risultato è 'ciao 0 3.500000', perché 'dodici' non è stato letto come numero 12. echo $? restituisce un valore diverso da 0.
 
-Che cosa ho capito su testo, conversioni e stampa:
+Che cosa ho capito su testo, conversioni e stampa: Non riconoscendo la stringa alfabetica come un numero, il codice assegna il valore di fallback 0. 
 
 ## Step 2 — Risultato ed errori
 
@@ -61,9 +61,11 @@ Come un controllo automatico può riconoscere un errore:
 ## Step 2 — Parametri e calcolo fisico
 
 Quando serve ricompilare e quando basta cambiare gli argomenti:
+NON SERVE RI-COMPILARE quando uso argc e argv e cambio gli argomenti a runtime dichiarandoli direttamente da terminale
+SERVE RI-COMPILARE quando uso scanf oppure quando ho cambiato altre parti del codice
 
 ## Step 2 — Git
 
-Come riconosco nella cronologia i commit dei due step:
+Come riconosco nella cronologia i commit dei due step: Posso usare l'istruzione git log --oneline, ricevendo l'ultimo commit che ho inviato. 
 
-Come ho verificato che la versione finale sia presente su GitHub:
+Come ho verificato che la versione finale sia presente su GitHub: Dalla riga di comanda, uso git status, se l'output è 'your branch is up to date' significa che non ci sono cambiamenti rispetto all'ultimo git push. Via Browser ho controllato la mia repository controllando l'elenco dei commit.
